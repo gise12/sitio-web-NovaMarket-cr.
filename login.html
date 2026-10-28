@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | NovaMarket CR</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/login.js" defer></script>
+</head>
+<body>
+    <main class="contenedor-login">
+        <section class="panel-izquierdo">
+            <div class="logo-caja">
+                <img src="img/logo.png" alt="Logo de NovaMarket CR" id="logoImagen">
+                <div id="logoAlternativo" class="logo-alternativo oculto">
+                    <div class="logo-simulado">✿</div>
+                    <div class="nombre-marca">NovaMarket CR</div>
+                    <div class="eslogan">CALIDAD QUE TRANSFORMA TU HOGAR</div>
+                </div>
+            </div>
+
+            <div class="beneficios">
+                <div class="beneficio">
+                    <div class="beneficio-icono">🛍️</div>
+                    <p>Productos<br>de calidad</p>
+                </div>
+                <div class="beneficio">
+                    <div class="beneficio-icono">🔒</div>
+                    <p>Compras<br>seguras</p>
+                </div>
+                <div class="beneficio">
+                    <div class="beneficio-icono">🤝</div>
+                    <p>Siempre<br>contigo</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel-derecho">
+            <h1>Login</h1>
+
+            <form class="formulario" id="formLogin">
+                <div class="grupo-campo">
+                    <label for="username">♙ Username</label>
+                    <input class="campo" type="text" id="username" name="username"
+                           autocomplete="username" required>
+                </div>
+
+                <div class="grupo-campo">
+                    <label for="password">♙ Password</label>
+                    <div class="contenedor-password">
+                        <input class="campo" type="password" id="password" name="password"
+                               autocomplete="current-password" required>
+                        <button class="ver-password" type="button" id="verPassword"
+                                aria-label="Mostrar contraseña">◉</button>
+                    </div>
+                </div>
+
+                <button class="boton-login" type="submit">Login</button>
+                <p class="mensaje" id="mensaje" role="status" aria-live="polite"></p>
+
+                <div class="enlaces">
+                    <a href="#" id="olvido">Forgot password?</a>
+                    <a href="#" id="ayuda">Help</a>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

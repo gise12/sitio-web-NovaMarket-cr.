@@ -1,0 +1,1484 @@
+/*CONFIGURACIÓN GENERAL DE INDEX*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #735A3C;
+    color: #3b2a14;
+}
+/*ENCABEZADO*/
+.logo {
+    position: absolute;
+    top: 2px;
+    left: 15px;
+    width: 150px;
+    height: auto;
+    margin: 0;
+    transform: none;
+    z-index: 10;
+}
+.encabezado {
+    background-color: #E1CE9A;
+    text-align: center;
+    padding: 25px 15px;
+    border-bottom: 3px solid #3b2a14;
+}
+
+.encabezado h1 {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(32px, 5vw, 58px);
+    color: #3b2a14;
+    font-weight: bold;
+}
+
+.encabezado p {
+    margin: 8px 0 0;
+    color: #735A3C;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(16px, 2.5vw, 25px);
+    font-style: italic;
+}
+
+/* MENÚ DE NAVEGACIÓN */
+
+.menu {
+    background-color: #AA8C66;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding: 18px 15px;
+    border-bottom: 3px solid #3b2a14;
+}
+
+.menu a {
+    color: #3b2a14;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #E1CE9A;
+}
+
+
+/*BANNER DE BIENVENIDA*/
+
+.bienvenida {
+    background: linear-gradient(
+        110deg,
+       
+        #907351,
+        #E1CE9A,
+        #AA8C66
+    );
+
+   
+    padding: 90px 90px;
+    color: #3b2a14;
+    border-bottom: 3px solid #3b2a14;
+}
+
+.bienvenida h2 {
+    font-size: 40px;
+    margin-bottom: 16px;
+    transform: translateY(90px);
+}
+
+
+.bienvenida h3 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    transform: translateY(90px);
+}
+
+.bienvenida p {
+    
+    margin-bottom: 20px;
+    color: #3b2a14;
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: justify;
+    background-color: #AA8C66;
+    border-radius: 8px;
+    border: 2px solid #795C3A;
+    border-bottom: 2px solid;
+    width: 700px;
+    transform: translateY(90px);
+}
+
+.bienvenida img {
+    width: 350px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-top: -300px;
+}
+
+/* Fotografía y curva */
+.fondo-imagen {
+    width: 52%;
+    min-height: 250px;
+    margin-left: auto;
+    transform: translateY(-35px);
+
+    background-image: url("../img/fondo.png");
+    background-size: cover;
+    background-position: center;
+
+    clip-path: ellipse(100% 100% at 100% 50%);
+
+
+    align-self: flex-start;
+    margin-top: -300px;
+
+}
+
+.interior-imagen {
+    width: 52%;
+    min-height: 250px;
+    margin-left: auto;
+    transform: translateY(80px);
+
+    background-image: url("../img/interior.jpeg");
+    background-size: cover;
+    background-position: center;
+
+    clip-path: ellipse(100% 100% at 100% 50%);
+
+
+    align-self: flex-start;
+    margin-top: -100px;
+
+}
+
+/*CATÁLOGO*/
+
+main {
+    padding: 35px 20px 45px;
+}
+
+.titulo-catalogo {
+    text-align: center;
+    color: #E1CE9A;
+    font-size: 22px;
+    margin-bottom: 42px;
+}
+
+.nav-catalogo {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.main-nav a:hover { 
+    
+    background-color: #AA8C66;
+ }
+
+/*CONTENEDOR DE LAS TARJETAS*/
+
+.contenedor-productos {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 28px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/*TARJETAS DE PRODUCTOS*/
+
+.tarjeta {
+    background-color: #907351;
+    border: 2px solid #3b2a14;
+    border-radius: 15px;
+
+    width: 277px;
+    padding: 18px;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+ /* EFECTO AL PASAR EL CURSOR */
+
+.tarjeta:hover {
+    transform: translateY(-6px);
+    border-color: #E1CE9A;
+
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+
+/* IMÁGENES DE LOS PRODUCTOS */
+
+.tarjeta img {
+    width: 100%;
+    height: 203px;
+
+    object-fit: cover;
+
+    border-radius: 9px;
+    border: 3px solid #3b2a14;
+
+    margin-bottom: 20px;
+}
+
+
+/* NOMBRES DE LOS PRODUCTOS */
+
+.tarjeta h3 {
+    color: #E1CE9A;
+    font-size: 16px;
+    margin-bottom: 18px;
+    min-height: 19px;
+}
+
+
+  
+
+/* BOTONES DE COMPRA*/
+
+.tarjeta button {
+    background-color: #E1CE9A;
+    color: #735A3C;
+
+    border: none;
+    border-radius: 8px;
+
+    padding: 12px 24px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.tarjeta button:hover {
+    background-color: #AA8C66;
+    color: #FFFFFF;
+
+    transform: scale(1.05);
+}
+
+
+/* SECCIÓN SOBRE NOSOTROS */
+
+.informacion {
+    background-color: #907351;
+    text-align: center;
+
+    padding: 40px 20px;
+
+    border-top: 2px solid #AA8C66;
+}
+
+.informacion h2 {
+    color: #E1CE9A;
+    font-size: 24px;
+    margin-bottom: 18px;
+}
+
+.informacion p {
+    color: #ffff;
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: center;
+    
+
+}
+
+
+/* PIE DE PÁGINA */
+
+footer {
+    background-color: #795C3A;
+
+    text-align: center;
+    padding: 22px 15px;
+
+    border-top: 3px solid #E1CE9A;
+}
+
+footer p {
+    color: #E1CE9A;
+    font-size: 14px;
+}
+
+
+
+/* -NOSOTROS- */
+
+.section-nosotros {
+    background: #E1CE9A;
+    padding: 40px 20px;
+    border-top: 2px solid #AA8C66;
+    border-bottom: 3px solid #3b2a14;
+}
+
+.nosotros h1 {
+    background: linear-gradient(
+        110deg,
+       
+        #907351,
+        #E1CE9A,
+        #AA8C66
+    );
+
+    padding: 90px 90px;
+    color: #3b2a14;
+    border-bottom: 3px solid #3b2a14;
+    text-align: center;
+    line-height: 1.7;
+}
+
+.nosotros h2 {
+    background-color: #AA8C66;
+    text-align: center;
+    padding: 20px 30px;
+    margin-bottom: 5px;
+    border-top: 2px solid #3b2a14;
+    border: 2px solid #AA8C66;
+}
+
+.nosotros p {
+    color: #3b2a14;
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: center;
+    background-color: #AA8C66;
+    border-radius: 8px;
+    border: 2px solid #3b2a14;
+    width: 700px;
+    margin: 5px auto;
+}
+
+.main-informacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+/* SECCIÓN DE INFORMACIÓN DE LA EMPRESA */
+
+.texto-nosotros {
+    color: #3b2a14;
+    font-size: 32px;
+    margin-bottom: 42px;
+    text-align: center;
+}
+
+
+/* Cuadros de la página Nosotros */
+.contenedor-nosotros {
+    background-image: url("../img/fondo-iconos.png");
+    background-repeat: repeat;
+    background-size: 350px auto;
+    background-position: center top;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+
+    width: 100%;
+    max-width: none;
+    margin: 30px auto;
+    padding: 30px;
+}
+
+.cuadro-nosotros {
+    width: 100%;
+    max-width: 1000px;
+    background-color: #f5ead4;
+    border: 3px solid #3b2a14;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-nosotros {
+    color: #593820;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.titulo-Valores {
+    color: #593820;
+    text-align: justify;
+    transform: translateX(15px);
+}
+
+.titulo-EquipoTrabajo {
+    color: #593820;
+    text-align: center;
+    transform: translateY(-243px);
+
+}
+
+.TablaRol {
+    color: #593820;
+    text-align: center;
+    transform: translateX(780px) translateY(-224px);
+
+}
+.cuadro-nosotros p,
+.cuadro-nosotros li {
+    color: #493725;
+    line-height: 1.7;
+}
+
+.cuadro-nosotros ul {
+    padding-left: 25px;
+}
+
+
+
+/* PRODUCTOS */
+
+/* CUADRÍCULA DE PRODUCTOS */
+.productos {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    width: 90%;
+    max-width: 1050px;
+    margin: 30px auto;
+    padding: 15px;
+    box-sizing: border-box;
+    align-items: stretch;
+}
+
+/* TARJETAS DE PRODUCTOS */
+.productos .tarjeta {
+    background-color: #907351;
+    border: 2px solid #3b2a14;
+    border-radius: 15px;
+    width: 100%;
+    min-width: 0;
+    min-height: 390px;
+    box-sizing: border-box;
+    padding: 15px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transition: transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* EFECTO DE LAS TARJETAS */
+.productos .tarjeta:hover {
+    transform: translateY(-6px);
+    border-color: #E1CE9A;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* IMÁGENES */
+.productos .tarjeta img {
+    width: 100%;
+    max-width: 70%;
+    height: 203px;
+
+    object-fit: cover;
+
+    border-radius: 9px;
+    border: 3px solid #3b2a14;
+    box-sizing: border-box;
+
+    margin-bottom: 15px;
+    flex-shrink: 0;
+}
+
+/* TÍTULOS */
+.productos .tarjeta .titulo-producto {
+    color: #E1CE9A;
+    font-size: 18px;
+    margin: 0 0 15px;
+    min-height: 22px;
+}
+
+
+/* DESCRIPCIONES */
+.productos .tarjeta p:not(.precio) {
+    color: #3b2a14;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.6;
+    margin: 0 0 15px;
+    width: 100%;
+    flex-grow: 1;
+    
+}
+
+
+/* PRECIOS */
+.productos .tarjeta .precio {
+    color: #3b2a14;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 16px;
+}
+
+/* BOTÓN AGREGAR: SOLO PRODUCTOS */
+.productos .tarjeta .boton {
+    display: inline-block;
+    background-color: #E1CE9A;
+    color: #735A3C;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    margin-top: auto;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+/* EFECTO DEL BOTÓN AGREGAR */
+.productos .tarjeta .boton:hover {
+    background-color: #AA8C66;
+    color: #FFFFFF;
+    transform: scale(1.05);
+}
+
+
+main > h2 {
+    text-align: center;
+    color: #E1CE9A;
+
+    background-color: #3b2a14;
+    border: 2px solid #E1CE9A;
+    border-radius: 10px;
+
+    padding: 15px 25px;
+    width: fit-content;
+    margin: 25px auto;
+}
+
+
+/* Fondo decorativo exclusivo de productos.html */
+.pagina-productos {
+    background-image: url("../img/fondo-iconos.png");
+    background-repeat: repeat;
+    background-size: 350px auto;
+    background-position: center top;
+    padding: 30px;
+}
+
+/* BOTÓN FLOTANTE DEL CARRITO */
+.boton-abrir-carrito {
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    z-index: 1001;
+
+    background-color: #E1CE9A;
+    color: #3b2a14;
+    border: 2px solid #3b2a14;
+    border-radius: 50px;
+
+    padding: 12px 18px;
+    font-size: 22px;
+    cursor: pointer;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease;
+}
+
+.boton-abrir-carrito:hover {
+    transform: scale(1.08);
+}
+
+/* CONTADOR DE PRODUCTOS */
+.contador-carrito {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 22px;
+    height: 22px;
+    margin-left: 5px;
+    padding: 2px;
+
+    background-color: #735A3C;
+    color: white;
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* VENTANA DEL CARRITO */
+.carrito-compras {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    z-index: 1000;
+
+    width: min(430px, calc(100vw - 30px));
+    max-height: 75vh;
+    overflow-y: auto;
+
+    margin: 0;
+    padding: 22px;
+    box-sizing: border-box;
+
+    background-color: #F8EBD5;
+    color: #3b2a14;
+    border: 2px solid #907351;
+    border-radius: 15px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* TÍTULO DEL CARRITO */
+.carrito-compras h2 {
+    margin: 0 0 20px;
+    padding: 0;
+    background: none;
+    border: none;
+    width: auto;
+
+    color: #3b2a14;
+    font-size: 23px;
+    text-align: left;
+}
+
+/* PRODUCTOS AGREGADOS */
+.item-carrito {
+    padding: 12px 0;
+    border-bottom: 1px solid #C2A456;
+}
+
+.item-carrito p {
+    margin: 5px 0;
+}
+
+/* BOTONES DE CANTIDAD */
+.boton-cantidad {
+    background-color: #E1CE9A;
+    color: #3b2a14;
+    border: 1px solid #907351;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* BOTÓN COMPRAR */
+.boton-comprar {
+    width: 100%;
+    margin-top: 12px;
+    padding: 12px;
+
+    background-color: #735A3C;
+    color: white;
+    border: none;
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.boton-comprar:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* MENSAJE DE COMPRA */
+#mensajeCompra {
+    color: #28623B;
+    font-weight: bold;
+}
+
+
+
+/*PÁGINA DE CONTACTO - NOVAMARKET CR*/
+
+.pagina-contacto {
+    margin: 0;
+    min-height: 100vh;
+    padding: 30px 4%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3b2a14;
+
+    background:
+        radial-gradient(ellipse at top left, #907351 0%, transparent 22%),
+        radial-gradient(ellipse at bottom right, #AA8C66 0%, transparent 25%),
+        #E1CE9A;
+}
+
+/* ENCABEZADO */
+
+.pagina-contacto .encabezado-contacto {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.pagina-contacto .encabezado-contacto h1 {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(32px, 5vw, 58px);
+    color: #3b2a14;
+    font-weight: bold;
+}
+
+.pagina-contacto .encabezado-contacto p {
+    margin: 8px 0 0;
+    color: #735A3C;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(16px, 2.5vw, 25px);
+    font-style: italic;
+}
+
+/* DISTRIBUCIÓN DE LOS DOS CUADROS */
+
+.pagina-contacto .contenedor-contacto {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 30px;
+    width: 100%;
+    max-width: 1450px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+/* CUADRO DEL FORMULARIO Y DE LA EMPRESA */
+
+.pagina-contacto .cuadro-contacto,
+.pagina-contacto .cuadro-informacion {
+    background-color: #907351;
+    border: 4px solid #AA8C66;
+    outline: 1px solid #735A3C;
+    border-radius: 24px;
+    padding: 30px;
+    box-sizing: border-box;
+    min-width: 0;
+    box-shadow: 0 5px 15px rgba(59, 42, 20, 0.12);
+}
+
+/* TÍTULOS DE LOS CUADROS */
+
+.pagina-contacto .cuadro-contacto h2,
+.pagina-contacto .cuadro-informacion h2 {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: #FFF4D5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(21px, 2.3vw, 32px);
+    margin: 0 0 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(225, 206, 154, 0.5);
+}
+
+.pagina-contacto .cuadro-contacto h2 span,
+.pagina-contacto .cuadro-informacion h2 span {
+    color: #E1CE9A;
+    font-size: 32px;
+}
+
+/* ETIQUETAS DEL FORMULARIO */
+
+.pagina-contacto #formcontacto label {
+    display: block;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 15px 0 7px;
+}
+
+/* CAMPOS DE TEXTO */
+
+.pagina-contacto #formcontacto input,
+.pagina-contacto #formcontacto select,
+.pagina-contacto #formcontacto textarea {
+    display: block;
+    width: 100%;
+    padding: 12px 14px;
+    box-sizing: border-box;
+    border: 1px solid #E1CE9A;
+    border-radius: 9px;
+    background-color: #EAD9B6;
+    color: #3b2a14;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.pagina-contacto #formcontacto input:focus,
+.pagina-contacto #formcontacto select:focus,
+.pagina-contacto #formcontacto textarea:focus {
+    border-color: #FFFFFF;
+    box-shadow: 0 0 0 3px rgba(225, 206, 154, 0.3);
+}
+
+.pagina-contacto #formcontacto input::placeholder,
+.pagina-contacto #formcontacto textarea::placeholder {
+    color: #907351;
+}
+
+/* ÁREA DEL MENSAJE */
+
+.pagina-contacto #formcontacto textarea {
+    min-height: 125px;
+    resize: vertical;
+}
+
+/* BOTÓN ENVIAR */
+
+.pagina-contacto #formcontacto button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px solid #3b2a14;
+    border-radius: 15px;
+    background-color: #E1CE9A;
+    color: #3b2a14;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.pagina-contacto #formcontacto button:hover {
+    background-color: #C2A456;
+    transform: translateY(-2px);
+}
+
+/* INFORMACIÓN DE LA EMPRESA */
+
+.pagina-contacto .dato-empresa {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(225, 206, 154, 0.65);
+}
+
+.pagina-contacto .icono-empresa {
+    flex-shrink: 0;
+    width: 68px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #735A3C;
+    color: #E1CE9A;
+    font-size: 30px;
+}
+
+.pagina-contacto .dato-empresa strong {
+    color: #FFFFFF;
+    font-size: 19px;
+}
+
+.pagina-contacto .dato-empresa p {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+    margin: 5px 0 0;
+}
+
+/* MENSAJE DECORATIVO */
+
+.pagina-contacto .mensaje-final {
+    margin: 35px 0 15px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(22px, 2.5vw, 32px);
+    font-style: italic;
+    font-weight: bold;
+    color: #3b2a14;
+}
+
+.pagina-contacto .decoracion-final {
+    text-align: center;
+    font-size: 35px;
+    color: #E1CE9A;
+    margin-top: 20px;
+}
+
+/* FOOTER DE CONTACTO */
+
+.pagina-contacto footer {
+    background-color: #795C3A;
+    text-align: center;
+    padding: 22px 15px;
+    border-top: 3px solid none;
+    width: 100vw;
+    box-sizing: border-box;
+    margin-left: calc(50% - 50vw);
+    border-bottom: 3px solid #3b2a14;
+    border-top: 3px solid #3b2a14;
+}
+
+.pagina-contacto footer p {
+    color: #E1CE9A;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+/* CONTACTO */
+
+.menu-contacto {
+    background-color: #AA8C66;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding: 18px 15px;
+    width: 100vw;
+    box-sizing: border-box;
+    margin-left: calc(50% - 50vw);
+    border-bottom: 3px solid #3b2a14;
+    border-top: 3px solid #3b2a14;
+}
+
+.menu-contacto a {
+    color: #3b2a14;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    transition: color 0.3s ease;
+    
+}
+
+.menu-contacto a:hover {
+    color: #E1CE9A;
+}
+
+
+/* SISTEMA DE NOVAMARKET CR  */
+
+.pagina-sistema-web .pagina-sistema {
+    background-color: #E1CE9A;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    box-sizing: border-box;
+}
+
+/* CUADROS GENERALES */
+
+.pagina-sistema-web .introduccion-sistema,
+.pagina-sistema-web .informacion-sistema {
+    background-color: #F3E6CE;
+    border: 1px solid #907351;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ENCABEZADOS DE LOS CUADROS */
+
+.pagina-sistema-web .introduccion-sistema h2,
+.pagina-sistema-web .informacion-sistema h2 {
+    background-color: #795C3A;
+    color: #FFFFFF;
+    padding: 18px 22px;
+    margin: 0;
+    font-size: 22px;
+}
+
+/* TEXTO INTERIOR */
+
+.pagina-sistema-web .introduccion-sistema p,
+.pagina-sistema-web .informacion-sistema p {
+    padding: 20px 25px;
+    margin: 0;
+    color: #3b2a14;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+/* INTRODUCCIÓN A TODO LO ANCHO */
+
+.pagina-sistema-web .introduccion-sistema {
+    grid-column: 1 / -1;
+    background-color: #F3E6CE;
+    color: #fff;
+}
+
+.pagina-sistema-web .introduccion-sistema h2 {
+    background-color: #795C3A;
+    color: #fff;
+}
+
+.pagina-sistema-web .introduccion-sistema p {
+    color: #3b2a14;
+}
+
+/* USUARIOS DEL SISTEMA */
+
+.pagina-sistema-web .informacion-sistema:has(ul) {
+    grid-column: 1 / -1;
+}
+
+.pagina-sistema-web .informacion-sistema ul {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 15px;
+    padding: 25px;
+    margin: 0;
+    list-style: none;
+}
+
+.pagina-sistema-web .informacion-sistema ul li {
+    padding: 15px;
+    text-align: center;
+    border-right: 1px solid #C2A456;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.pagina-sistema-web .informacion-sistema ul li:last-child {
+    border-right: none;
+}
+
+/* FUNCIONES PRINCIPALES */
+
+.pagina-sistema-web .informacion-sistema:has(.funciones-sistema) {
+    grid-column: 1 / -1;
+}
+
+.pagina-sistema-web .funciones-sistema {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.pagina-sistema-web .tarjeta-funcion {
+    background-color: #FFFFFF;
+    border: 1px solid #C2A456;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+}
+
+.pagina-sistema-web .tarjeta-funcion h3 {
+    color: #735A3C;
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.pagina-sistema-web .tarjeta-funcion p {
+    padding: 0;
+    font-size: 15px;
+}
+
+/* PROTOTIPOS */
+
+.pagina-sistema-web .informacion-sistema:has(.imagenes-prototipo) {
+    grid-column: 1 / -1;
+}
+
+.pagina-sistema-web .imagenes-prototipo {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.pagina-sistema-web .imagenes-prototipo figure {
+    margin: 0;
+    text-align: center;
+    min-width: 0;
+}
+
+.pagina-sistema-web .imagenes-prototipo h4 {
+    color: #735A3C;
+    font-size: 17px;
+}
+
+.pagina-sistema-web .imagenes-prototipo img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    border: 1px solid #907351;
+    border-radius: 10px;
+}
+
+.menu-sistema-web {
+    background-color: #AA8C66;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding: 18px 15px;
+    width: 100vw;
+    box-sizing: border-box;
+    margin-left: calc(50% - 50vw);
+    border-bottom: 3px solid #3b2a14;
+    border-top: 0px solid #3b2a14;
+}
+
+.menu-sistema-web a {
+    color: #3b2a14;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    transition: color 0.3s ease;
+    
+}
+
+.menu-sistema-web a:hover {
+    color: #E1CE9A;
+}
+
+
+
+
+/* ADAPTACIÓN PARA TABLETS Y CELULARESNOVAMARKET CR*/
+
+/* Evita desbordamientos horizontales */
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* TABLETS: HASTA 900px */
+
+@media (max-width: 900px) {
+
+    /* ENCABEZADO */
+    .logo {
+        width: 95px;
+        top: 10px;
+        left: 10px;
+    }
+
+    .encabezado {
+        padding: 25px 15px;
+    }
+
+    .encabezado h1 {
+        font-size: clamp(27px, 5vw, 42px);
+    }
+
+    .encabezado p {
+        font-size: clamp(14px, 2.5vw, 20px);
+    }
+
+    /* MENÚS */
+    .menu,
+    .menu-contacto,
+    .menu-sistema-web {
+        flex-wrap: wrap;
+        gap: 15px 22px;
+        padding: 15px 12px;
+    }
+
+    .menu a,
+    .menu-contacto a,
+    .menu-sistema-web a {
+        font-size: 14px;
+    }
+
+    /* BIENVENIDA */
+    .bienvenida {
+        padding: 35px 25px;
+    }
+
+    .bienvenida h2,
+    .bienvenida h3,
+    .bienvenida p {
+        transform: none;
+    }
+
+    .bienvenida h2 {
+        font-size: 32px;
+    }
+
+    .bienvenida h3 {
+        font-size: 22px;
+    }
+
+    .bienvenida p {
+        width: 100%;
+        max-width: 100%;
+        padding: 12px;
+        overflow-wrap: anywhere;
+    }
+
+    .bienvenida img {
+        display: block;
+        width: min(100%, 300px);
+        height: auto;
+        margin: 20px auto 0;
+    }
+
+    .fondo-imagen,
+    .interior-imagen {
+        width: 100%;
+        min-height: 220px;
+        margin: 20px auto;
+        transform: none;
+        clip-path: none;
+        border-radius: 12px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* CATÁLOGO GENERAL */
+    .contenedor-productos {
+        gap: 18px;
+        padding: 0 10px;
+    }
+
+    .tarjeta {
+        max-width: 100%;
+    }
+
+    /* NOSOTROS */
+    .nosotros h1 {
+        padding: 40px 20px;
+        font-size: 28px;
+    }
+
+    .nosotros p {
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .main-informacion {
+        flex-wrap: wrap;
+        padding: 0 10px;
+    }
+
+    .contenedor-nosotros {
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .cuadro-nosotros {
+        padding: 18px;
+    }
+
+    .titulo-EquipoTrabajo,
+    .TablaRol,
+    .titulo-Valores {
+        transform: none;
+    }
+
+    /* PRODUCTOS */
+    .productos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: 100%;
+        gap: 18px;
+        padding: 10px;
+    }
+
+    .productos .tarjeta {
+        min-height: 0;
+    }
+
+    .productos .tarjeta img {
+        max-width: 100%;
+        height: 180px;
+    }
+
+    /* CONTACTO */
+    .pagina-contacto .contenedor-contacto {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .pagina-contacto .cuadro-contacto,
+    .pagina-contacto .cuadro-informacion {
+        padding: 22px;
+    }
+
+    .pagina-contacto .dato-empresa {
+        gap: 14px;
+    }
+
+    /* SISTEMA */
+    .pagina-sistema-web .pagina-sistema {
+        grid-template-columns: 1fr;
+        padding: 18px;
+    }
+
+    .pagina-sistema-web .introduccion-sistema,
+    .pagina-sistema-web .informacion-sistema,
+    .pagina-sistema-web .informacion-sistema:has(ul),
+    .pagina-sistema-web .informacion-sistema:has(.funciones-sistema),
+    .pagina-sistema-web .informacion-sistema:has(.imagenes-prototipo) {
+        grid-column: 1;
+        min-width: 0;
+    }
+
+    .pagina-sistema-web .informacion-sistema ul {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .pagina-sistema-web .funciones-sistema {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .pagina-sistema-web .imagenes-prototipo {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+
+/*ADAPTACION PARA DISPOSITIVOS*/
+
+@media (max-width: 768px) {
+
+    /* Menús de navegación */
+    nav,
+    .menu,
+    .menu-contacto,
+    .menu-sistema-web {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    /* Productos */
+    .productos {
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .productos .tarjeta {
+        width: 100%;
+    }
+
+    /* Imágenes */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Encabezado y logo */
+    .logo {
+        position: static;
+        display: block;
+        width: 100px;
+        margin: 0 auto 10px;
+    }
+
+    /* Texto de bienvenida */
+    .bienvenida {
+        padding: 25px 15px;
+    }
+
+    .bienvenida h2,
+    .bienvenida h3,
+    .bienvenida p {
+        transform: none;
+        width: 100%;
+    }
+
+    .bienvenida img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .fondo-imagen,
+    .interior-imagen {
+        width: 100%;
+        min-height: 200px;
+        margin: 20px 0;
+        transform: none;
+        clip-path: none;
+    }
+
+    /* Cuadros de Nosotros */
+    .nosotros p {
+        width: 100%;
+    }
+
+    .main-informacion {
+        flex-wrap: wrap;
+    }
+
+    .titulo-Valores,
+    .titulo-EquipoTrabajo,
+    .TablaRol {
+        transform: none;
+    }
+
+    /* Página de contacto */
+    .pagina-contacto .contenedor-contacto {
+        grid-template-columns: 1fr;
+    }
+
+    /* Página del sistema */
+    .pagina-sistema-web .pagina-sistema {
+        grid-template-columns: 1fr;
+    }
+
+    .pagina-sistema-web .funciones-sistema,
+    .pagina-sistema-web .imagenes-prototipo,
+    .pagina-sistema-web .informacion-sistema ul {
+        grid-template-columns: 1fr;
+    }
+
+}
+
