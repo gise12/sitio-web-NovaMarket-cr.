@@ -608,6 +608,7 @@ main > h2 {
     padding: 30px;
 }
 
+<<<<<<< HEAD
 /* BOTÓN FLOTANTE DEL CARRITO */
 .boton-abrir-carrito {
     position: fixed;
@@ -733,6 +734,8 @@ main > h2 {
     font-weight: bold;
 }
 
+=======
+>>>>>>> 928daf376bc33048cad48a46b1e8f8adfc339afa
 
 
 /*PÁGINA DE CONTACTO - NOVAMARKET CR*/
@@ -1180,8 +1183,18 @@ main > h2 {
 
 
 
+<<<<<<< HEAD
 
 /* ADAPTACIÓN PARA TABLETS Y CELULARESNOVAMARKET CR*/
+=======
+/* ADAPTACIÓN A CELULARES */
+
+
+/* =========================================
+   ADAPTACIÓN PARA TABLETS Y CELULARES
+   NOVAMARKET CR
+========================================= */
+>>>>>>> 928daf376bc33048cad48a46b1e8f8adfc339afa
 
 /* Evita desbordamientos horizontales */
 html,
@@ -1195,7 +1208,13 @@ img {
     max-width: 100%;
 }
 
+<<<<<<< HEAD
 /* TABLETS: HASTA 900px */
+=======
+/* =========================================
+   TABLETS: HASTA 900px
+========================================= */
+>>>>>>> 928daf376bc33048cad48a46b1e8f8adfc339afa
 
 @media (max-width: 900px) {
 
@@ -1384,6 +1403,12 @@ img {
 
 /*ADAPTACION PARA DISPOSITIVOS*/
 
+<<<<<<< HEAD
+=======
+
+/* DISEÑO RESPONSIVO PARA CELULARES Y TABLETAS */
+
+>>>>>>> 928daf376bc33048cad48a46b1e8f8adfc339afa
 @media (max-width: 768px) {
 
     /* Menús de navegación */

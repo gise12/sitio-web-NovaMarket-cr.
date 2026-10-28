@@ -11,7 +11,11 @@ formulario.addEventListener("submit", function(event) {
     } else {
         alert("Formulario enviado correctamente.");
     }
+<<<<<<< HEAD
     
 });
 
 
+=======
+});
+>>>>>>> 928daf376bc33048cad48a46b1e8f8adfc339afa
